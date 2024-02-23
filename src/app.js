@@ -5,8 +5,9 @@ const app = express();
 const publicPath = path.resolve(__dirname, '../public')
 app.use(express.static(publicPath))
 
-app.listen(3022, function (){
-    console.log('Servidor en el puerto 3022');
+const port = process.env.PORT|| 3002
+app.listen(port, function (){
+    console.log('Servidor Levantado');
 })
 
 app.get('/', (req, res) => {
