@@ -39,16 +39,16 @@ header {
   justify-content: space-between;
 }
 
-.logo img{
+.logo img {
   width: 50%;
 }
 
-.search-box{
+.search-box {
   display: flex;
   width: 50%;
 }
 
-.top-header p i{
+.top-header p i {
   margin-right: 10px;
 }
 
@@ -64,25 +64,28 @@ header ul li a {
   text-decoration: none;
   color: #000;
 }
+
 nav {
   display: flex;
   display: none;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0 25px;
+  margin: 0 30px;
 }
+
 .nav1,
 .nav2 {
   display: flex;
   width: 40%;
   justify-content: space-around;
   flex-wrap: wrap;
+  gap: 10px;
 }
 
 .nav1 li a:hover,
-.nav2 li a:hover{
-  background-color: #fff;
-  color: #0044aa;
+.nav2 li a:hover {
+  background-color: #1259c3;
+  color: #fff;
   padding: 10px;
   border-radius: 10px;
 }
@@ -98,6 +101,7 @@ input {
   border: none;
   border-radius: 5px 0 0 5px;
   width: 1em;
+  outline: none;
 }
 
 button {
@@ -229,16 +233,31 @@ main {
     display: none;
   }
 
+  .top-header p {
+    margin-bottom: 40px;
+  }
+
   .description {
     display: block;
+  }
+
+  #srch {
+    min-width: 50%;
+  }
+
+  #srch,
+  button {
+    margin: 23px 0;
   }
 
   main section article {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
+
   .main-article {
     margin-bottom: 14px;
   }
+
   .main-article p {
     margin-right: 10px;
     margin-bottom: 20px;
@@ -264,28 +283,27 @@ main {
 }
 
 @media (min-width: 769px) {
+  .top-header p {
+    position: absolute;
+    right: 12px;
+    top: 50px;
+    font-size: 14px;
+  }
 
- .top-header p{
-  position: absolute;
-  right: 70px;
-  top: 50px;
- }
+  .logo {
+    width: 55%;
+    gap: 50px;
+    margin-bottom: 10px;
+  }
 
- .logo{
-  width: 55%;
-  gap: 50px;
-  margin-bottom: 10px;
- }
+  #srch {
+    min-width: 105%;
+  }
 
-
- #srch, button{
-  margin: 16px 0;
- }
-
- .top-header p {
-  font-size: 18px;
-  margin-right: 10px;
- }
+  #srch,
+  button {
+    margin: 30px 0;
+  }
 
   article {
     width: 22%;
@@ -298,5 +316,11 @@ main {
   .main-article p {
     margin-right: 30px;
     font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #srch {
+    min-width: 165%;
   }
 }
