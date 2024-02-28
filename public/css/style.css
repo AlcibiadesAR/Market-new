@@ -249,6 +249,38 @@ main {
   text-align: center;
 }
 
+.main-footer {
+  background-color: #ffffff;
+  padding: 20px 0;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 25px;
+}
+
+.footer-data {
+  text-align: center;
+}
+
+.footer-data i {
+  color: #0044aa;
+  font-size: 3em;
+  padding: 15px;
+}
+
+.footer-data h2 {
+  color: #666;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.footer-data p {
+  color: #666;
+  font-size: 0.75em;
+  font-weight: 300;
+}
 
 @media (min-width: 361px) {
   nav {
@@ -355,6 +387,12 @@ main {
     white-space: nowrap;
   }
   
+  .main-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 
 @media (min-width: 1024px) {
