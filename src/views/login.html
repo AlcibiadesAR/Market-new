@@ -13,8 +13,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
     />
-    <link rel="stylesheet" type="text/css" href="/css/register.css" />
-    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/registro-login.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Registro de Usuario</title>
   </head>
   <body>
@@ -51,12 +51,15 @@
         </ul>
         <ul class="nav2">
           <li>
-            <a href="./register.html"
+            <a href="/">Home <i class="fas fa-home"></i></a>
+          </li>
+          <li>
+            <a href="/registro.html"
               >Creá tu cuenta <i class="far fa-id-card"></i
             ></a>
           </li>
           <li>
-            <a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a>
+            <a href="/login.html">Ingresá <i class="fas fa-sign-in-alt"></i></a>
           </li>
           <li>
             <a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a>
@@ -67,6 +70,46 @@
         <i class="fa fa-bars burger"></i>
       </div>
     </header>
-    <main></main>
+    <main class="main-register">
+      <h2>Registro</h2>
+      <form class="form-register" action="">
+        <div class="label-input">
+          <label> <i class="fas fa-user"></i> Nombre:</label>
+          <input
+            class="input-register"
+            type="text"
+            name="nombre"
+            pattern=".{5,}"
+            title="El nombre debe tener al menos 5 caracteres."
+            required
+            placeholder=""
+          />
+          <label> <i class="fas fa-user"></i> Apellido:</label>
+          <input
+            class="input-register"
+            type="text"
+            name="apellido"
+            pattern=".{5,}"
+            title="El apellido debe tener al menos 5 caracteres."
+            required
+            placeholder=""
+          />
+          <label><i class="fas fa-lock"></i> Contraseña:</label>
+          <input
+            class="input-register"
+            type="password"
+            name="password"
+            pattern=".{5,}"
+            title="La Contraseña debe tener al menos 5 caracteres."
+            required
+            placeholder=""
+          />
+          <div class="box-button">
+            <button id="button1" type="reset">Borrar</button>
+            <button id="button2" type="submit">Enviar</button>
+          </div>
+        </div>
+      </form>
+    </main>
   </body>
 </html>

@@ -143,6 +143,11 @@ button {
   font-weight: normal;
 }
 
+.price,.discount{
+  margin-top: 10px;
+}
+
+
 h3,
 .description {
   color: #666;
@@ -150,9 +155,24 @@ h3,
 
 .description {
   display: none;
-  margin-top: 20px;
-  text-align: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  margin-top: 15px;
+  background-color: #F0F0F0;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: opacity 0.3s ease;
+  opacity: 0;
 }
+
+main section article:hover .description {
+  display: block;
+  opacity: 1;
+}
+
 
 .banner img {
   width: 100%;
@@ -166,6 +186,11 @@ main {
 main section article {
   background-color: #fff;
   margin: 10px 0px;
+  position: relative;
+}
+
+main section article:hover{
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
 main section article img {
@@ -194,9 +219,10 @@ main section h3 {
 .main-article {
   width: 100%;
   border-top: 1px solid #ebebeb;
-  padding: 15px;
+  padding: 15px 15px 15px 15px;
+  margin-bottom: 0;
   position: relative;
-  display: flex;
+  display: flex; 
 }
 
 .fa-truck {
@@ -223,6 +249,7 @@ main {
   text-align: center;
 }
 
+
 @media (min-width: 361px) {
   nav {
     display: flex;
@@ -237,10 +264,7 @@ main {
     margin-bottom: 40px;
   }
 
-  .description {
-    display: block;
-  }
-
+  
   #srch {
     min-width: 50%;
   }
@@ -250,13 +274,11 @@ main {
     margin: 23px 0;
   }
 
-  main section article {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-  }
-
   .main-article {
     margin-bottom: 14px;
+    padding: 15px 15px 0 15px;
   }
+  
 
   .main-article p {
     margin-right: 10px;
@@ -271,6 +293,12 @@ main {
     font-size: 13px;
   }
 
+  .description {
+    margin-top: 5px;
+    height: 100%;
+    white-space: nowrap;
+  }
+  
   .products {
     flex-direction: row;
     flex-wrap: wrap;
@@ -280,9 +308,11 @@ main {
   article {
     width: 47%;
   }
+
 }
 
 @media (min-width: 769px) {
+
   .top-header p {
     position: absolute;
     right: 12px;
@@ -309,18 +339,52 @@ main {
     width: 22%;
   }
 
+  .main-article p {
+    margin-right: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+
   .main-article h4 {
     font-size: 16px;
   }
 
-  .main-article p {
-    margin-right: 30px;
-    font-size: 16px;
+  .description {
+    margin-top: 5px;
+    height: 100%;
+    white-space: nowrap;
   }
+  
 }
 
 @media (min-width: 1024px) {
   #srch {
     min-width: 165%;
+    min-height: 10%;
   }
+
+  .description {
+    display: block;
+  }
+
+}
+
+@media (min-width: 1280px) {
+  #srch {
+    min-width: 165%;
+    min-height: 10%;
+  }
+
+  .main-article p {
+    margin-right: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+
+  .description {
+    margin-top: 5px;
+    height: 100%;
+    white-space: nowrap;
+  }
+
 }

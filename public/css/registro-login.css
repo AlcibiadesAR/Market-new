@@ -1,0 +1,162 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    background-color: #ebebeb;
+  }
+
+ .main-register{
+    display: none;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem;
+    border-radius: 5px;
+ }
+
+ .main-register h2{
+    margin: 1rem 0;
+ }
+
+ .main-register h2:hover{
+    color: #1259c3;
+ }
+
+.form-register{
+    display: flex;
+    flex-direction: column;
+    padding: 2px 20px;
+    width: 93%;
+}
+
+.form-register i{
+    color: #1259c3
+}
+
+.label-input{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.input-register{
+    border-radius: 5px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+input:invalid:not(:placeholder-shown) {
+    border: 1px solid red;
+}
+
+.selects{
+    margin-top: 10px;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    background-color: #1259c3;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.selects option {
+ background-color: #1259c3;
+    color: #fff;
+ font-weight: bold;
+}
+
+
+.box-labelRadio{
+    display: flex;
+    align-items: center;
+    margin: 10px 10px 10px 0
+}
+
+.box-labelRadio label {
+    white-space: nowrap;
+}
+
+#input-female{
+    margin-left: 4px;
+}
+
+#input-noinform{
+    margin-right: 60px;
+}
+
+.box-conditions{
+    display: flex;
+    align-items: center;
+    margin: 10px 10px 10px 0
+}
+
+.box-conditions label {
+    white-space: nowrap;
+}
+
+#input-Subscribe{
+    margin-left: 19px;
+}
+
+.box-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#button1, #button2{
+    min-width: 30%;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #1259c3;
+    font-weight: bold;
+}
+
+#button1:hover, #button2:hover{
+    background-color: #0022AA;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+@media (min-width: 481px){
+
+    .form-register{
+        width: 360px;
+    }
+    
+}
+
+@media (min-width: 768px){
+    
+    .form-register{
+        width: 400px;
+    }
+}
+
+@media (min-width: 1024px){
+
+    .form-register{
+        width: 500px;
+    }
+
+}
+
+@media (min-width: 1280px){
+
+    .form-register{
+        width: 500px;
+    }
+
+}
+
+
+

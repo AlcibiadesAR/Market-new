@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bienvenidos a MercadoLiebre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/registro-login.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Registro de Usuario</title>
+  </head>
+  <body>
+    <header>
+      <div class="top-header">
+        <div class="logo">
+          <img
+            src="images/logo-mercado-liebre.svg"
+            alt="Logo de MercadoLiebre"
+          />
+          <div class="search-box">
+            <form action="">
+              <input
+                type="text"
+                name="search"
+                id="srch"
+                placeholder="Buscar productos, marcas y más"
+              />
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </div>
+        <p>
+          <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta
+          de crédito
+        </p>
+      </div>
+      <nav>
+        <ul class="nav1">
+          <li><a href="#">Ofertas</a></li>
+          <li><a href="#">Tiendas Oficiales</a></li>
+          <li><a href="#">Vender</a></li>
+          <li><a href="#">Ayuda</a></li>
+        </ul>
+        <ul class="nav2">
+          <li>
+            <a href="/">Home <i class="fas fa-home"></i></a>
+          </li>
+          <li>
+            <a href="/registro.html"
+              >Creá tu cuenta <i class="far fa-id-card"></i
+            ></a>
+          </li>
+          <li>
+            <a href="/login.html">Ingresá <i class="fas fa-sign-in-alt"></i></a>
+          </li>
+          <li>
+            <a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="burger-menu">
+        <i class="fa fa-bars burger"></i>
+      </div>
+    </header>
+    <main class="main-register">
+      <h2>Registro</h2>
+      <form class="form-register" action="">
+        <div class="label-input">
+          <label> <i class="fas fa-user"></i> Nombre:</label>
+          <input
+            class="input-register"
+            type="text"
+            name="nombre"
+            pattern=".{5,}"
+            title="El nombre debe tener al menos 5 caracteres."
+            required
+            placeholder=""
+          />
+          <label> <i class="fas fa-user"></i> Apellido:</label>
+          <input
+            class="input-register"
+            type="text"
+            name="apellido"
+            pattern=".{5,}"
+            title="El apellido debe tener al menos 5 caracteres."
+            required
+            placeholder=""
+          />
+          <label><i class="fas fa-envelope"></i> Email:</label>
+          <input
+            class="input-register"
+            type="email"
+            name="email"
+            required
+            placeholder=""
+          />
+          <label><i class="fas fa-lock"></i> Contraseña:</label>
+          <input
+            class="input-register"
+            type="password"
+            name="password"
+            pattern=".{5,}"
+            title="La Contraseña debe tener al menos 5 caracteres."
+            required
+            placeholder=""
+          />
+          <label><i class="fas fa-birthday-cake"></i> Edad:</label>
+          <input
+            class="input-register"
+            type="number"
+            name="edad"
+            required
+            placeholder=""
+          />
+          <label>Pais:</label>
+          <select class="selects" name="pais" required>
+            <option value="argentina">Argentina</option>
+            <option value="bolivia">Bolivia</option>
+            <option value="chile">Chile</option>
+            <option value="colombia">Colombia</option>
+            <option value="peru">Peru</option>
+            <option value="panama" selected>Panama</option>
+          </select>
+          <br />
+          <label>Genero:</label>
+          <div class="box-labelRadio">
+            <label>Femenino:</label>
+            <input
+              id="input-female"
+              type="radio"
+              name="genero"
+              value="femenino"
+              required
+            />
+          </div>
+          <div class="box-labelRadio">
+            <label>Masculino:</label>
+            <input type="radio" name="genero" value="masculino" required/>
+          </div>
+          <div class="box-labelRadio">
+            <label>No deseo informar:</label>
+            <input
+              id="input-noinform"
+              type="radio"
+              name="genero"
+              value="noinforma"
+              required
+            />
+          </div>
+          <br />
+          <label>Condiciones:</label>
+          <div class="box-conditions">
+            <label>Acepto las condiciones del sitio:</label>
+            <input
+              class="input-register"
+              type="checkbox"
+              name="condiciones"
+              value="acepto"
+              required
+            />
+          </div>
+          <div class="box-conditions">
+            <label>Suscribirme a una newsletter:</label>
+            <input
+              id="input-Subscribe"
+              class="input-register"
+              type="checkbox"
+              name="condiciones"
+              value="suscribir"
+              required
+            />
+          </div>
+          <div class="box-button">
+            <button id="button1" type="reset">Borrar</button>
+            <button id="button2" type="submit">Enviar</button>
+          </div>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
