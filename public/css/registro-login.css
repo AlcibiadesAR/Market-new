@@ -112,8 +112,17 @@ input:invalid:not(:placeholder-shown) {
     gap: 20px;
 }
 
-#button1, #button2{
+#button1{
     min-width: 30%;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #1259c3;
+    font-weight: bold;
+}
+
+#button2{
+    min-width: 10%;
+    padding: 10px 45px;
     border-radius: 10px;
     background-color: #fff;
     color: #1259c3;
